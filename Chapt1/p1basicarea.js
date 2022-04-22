@@ -1,5 +1,5 @@
 // Grade Culculation
-const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')()                         // npm install prompt-sync
 
 var fin = false
 var message =''
@@ -9,15 +9,15 @@ do{
     console.log('(1) Rectangle Area Calculate')
     console.log('(2) Triangle Area Calculate')
     console.log('(3) Circle Area Calculate')
-    var choise= prompt(`Please insert Choise Number : >>.. `)
-    choise = parseInt(choise)
+    var choise= prompt(`Please insert Choise Number : >>.. `)   //Get Choise from cmd
+    choise = parseInt(choise)                                   //Convert str to Int
     if(choise ==1){
         console.log('=== Rectangle Area Calculate ===')
-        var width = prompt(`Please insert width : >>.. `)
-        var higth = prompt(`Please insert higth : >>.. `)
-        width= parseFloat(width)
+        var width = prompt(`Please insert width : >>.. `)       //Get x
+        var higth = prompt(`Please insert higth : >>.. `)       //Get y
+        width= parseFloat(width)                                //Convert str to float
         higth= parseFloat(higth)
-        console.log('This Rectangle Area is : '+width*higth)
+        console.log('This Rectangle Area is : '+width*higth)    //Show result of calculation x*y
     }else if(choise ==2){
         console.log('=== Triangle Area Calculate ===')
         var base = prompt(`Please insert base: >>.. `)
